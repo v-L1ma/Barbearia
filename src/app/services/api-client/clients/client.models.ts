@@ -17,7 +17,7 @@ export interface SaveClientResponse {
     phone: string
 }
 
-export interface ResponseClientResponse {
+export interface UpdateClientResponse {
     id: string
     name: string
     email: string
