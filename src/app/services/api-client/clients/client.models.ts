@@ -18,21 +18,21 @@ export interface SaveClientResponse {
 }
 
 export interface UpdateClientResponse {
-    id: string
+    id: number
     name: string
     email: string
     phone: string
 }
 
 export interface ListClientResponse {
-    id: string
+    id: number
     name: string
     email: string
     phone: string
 }
 
 export interface DetailClientResponse {
-    id: string
+    id: number
     name: string
     email: string
     phone: string
