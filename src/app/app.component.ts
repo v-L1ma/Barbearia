@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, OnDestroy{
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
       map(()=>this.getRouteTitle(this.activateRoute))
-    ).subscribe()
+    ).subscribe(title => this.title = title)
   }
 
   private getRouteTitle(route: ActivatedRoute):string {
